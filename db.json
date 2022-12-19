@@ -1,0 +1,77 @@
+{
+  "productList": [
+    {
+      "name": "sam",
+      "city": "Rawalpindi",
+      "date": "2022-12-13T19:00:00.000Z",
+      "product": "Pen",
+      "price": 20,
+      "comment": "get it after a day",
+      "id": 2
+    },
+    {
+      "name": "aliya",
+      "city": "Rawalpindi",
+      "date": "2022-12-06T19:00:00.000Z",
+      "product": "Pen",
+      "price": 33,
+      "comment": "g",
+      "id": 3
+    },
+    {
+      "name": "amjad",
+      "city": "Islamabad",
+      "date": "2022-12-02T19:00:00.000Z",
+      "product": "Pen",
+      "price": 66,
+      "comment": "hh",
+      "id": 5
+    },
+    {
+      "name": "avi",
+      "city": "Islamabad",
+      "date": "2022-12-07T19:00:00.000Z",
+      "product": "eraser",
+      "price": 33,
+      "comment": "ll",
+      "id": 6
+    },
+    {
+      "name": "sana",
+      "city": "Islamabad",
+      "date": "2022-12-13T19:00:00.000Z",
+      "product": "pencil",
+      "price": 20,
+      "comment": "get it after a day",
+      "id": 7
+    },
+    {
+      "name": "sana",
+      "city": "Rawalpindi",
+      "date": "2022-12-05T19:00:00.000Z",
+      "product": "eraser",
+      "price": 22,
+      "comment": "ae",
+      "id": 8
+    },
+    {
+      "name": "aaa",
+      "city": "Islamabad",
+      "date": "2022-11-30T19:00:00.000Z",
+      "product": "pencil",
+      "price": 33,
+      "comment": "fdf",
+      "id": 9
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
