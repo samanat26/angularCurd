@@ -1,0 +1,19 @@
+.container{
+    text-align: center;
+    max-width: 600px;
+    margin: 100px auto;
+    height: 200px;
+  position: relative;
+  border: 3px solid green;
+  }
+
+  .btn{
+    align-content: center;
+    margin: 0;
+    position: relative;
+    top: 30%;
+    right:230px;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+

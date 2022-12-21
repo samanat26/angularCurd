@@ -1,0 +1,31 @@
+<div class="container" >
+<div style=" border: 1px solid;">
+    <h1 mat-title style="text-align: center;">Login</h1>
+<div mat-content>
+   <form >
+    <mat-form-field appearance="fill">
+      <mat-label>Enter your email</mat-label>
+      <input matInput placeholder="pat@example.com" [formControl]="email" required>
+      <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Enter your password</mat-label>
+      <input matInput [type]="hide ? 'password' : 'text'">
+      <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+      </button>
+    </mat-form-field>
+   </form>
+
+</div>
+
+<div class="btn" mat-form-actions [align]="'end'">
+  <!-- <button mat-raised-button color="warn" mat-dialog-close> Close</button> -->
+  <button mat-raised-button color="primary" > Login</button> 
+</div>
+
+<a routerLink="../forget-password" routerLinkActive="active" ariaCurrentWhenActive="page">forgot password</a>
+ 
+</div>
+</div>
