@@ -1,77 +1,72 @@
 {
-  "productList": [
+  "signup": [
     {
-      "name": "sam",
-      "city": "Rawalpindi",
-      "date": "2022-12-13T19:00:00.000Z",
-      "product": "Pen",
-      "price": 20,
-      "comment": "get it after a day",
-      "id": 2
-    },
-    {
-      "name": "aliya",
-      "city": "Rawalpindi",
-      "date": "2022-12-06T19:00:00.000Z",
-      "product": "Pen",
-      "price": 33,
-      "comment": "g",
+      "name": "suman",
+      "email": "suman544@gmail.com",
+      "password": "123",
+      "gender": 2,
       "id": 3
     },
     {
+      "name": "suman",
+      "email": "suman@gmail.com",
+      "password": "suman123",
+      "cpassword": "suman123",
+      "gender": 2,
+      "number": "03360777181",
+      "id": 25
+    },
+    {
+      "name": "suman",
+      "email": "suman@gmail.com",
+      "password": "suman123",
+      "cpassword": "suman123",
+      "gender": 2,
+      "number": "03360777181",
+      "id": 26
+    },
+    {
+      "name": "suman",
+      "email": "suman@gmail.com",
+      "password": "suman123",
+      "cpassword": "suman123",
+      "gender": 2,
+      "number": "03360777181",
+      "id": 27
+    },
+    {
       "name": "amjad",
-      "city": "Islamabad",
-      "date": "2022-12-02T19:00:00.000Z",
-      "product": "Pen",
-      "price": 66,
-      "comment": "hh",
-      "id": 5
-    },
-    {
-      "name": "avi",
-      "city": "Islamabad",
-      "date": "2022-12-07T19:00:00.000Z",
-      "product": "eraser",
-      "price": 33,
-      "comment": "ll",
-      "id": 6
-    },
-    {
-      "name": "sana",
-      "city": "Islamabad",
-      "date": "2022-12-13T19:00:00.000Z",
-      "product": "pencil",
-      "price": 20,
-      "comment": "get it after a day",
-      "id": 7
-    },
-    {
-      "name": "sana",
-      "city": "Rawalpindi",
-      "date": "2022-12-05T19:00:00.000Z",
-      "product": "eraser",
-      "price": 22,
-      "comment": "ae",
-      "id": 8
-    },
-    {
-      "name": "aaa",
-      "city": "Islamabad",
-      "date": "2022-11-30T19:00:00.000Z",
-      "product": "pencil",
-      "price": 33,
-      "comment": "fdf",
-      "id": 9
+      "email": "amjad@gmail.com",
+      "password": "amjadbutt",
+      "cpassword": "amjadbutt",
+      "gender": 1,
+      "number": "03315464810",
+      "id": 28
     }
   ],
-  "comments": [
+  "enrollment": [
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": "0.4814602535399326",
+      "fname": "Suman",
+      "lname": "gill",
+      "states": "Pakistan",
+      "course": [
+        4,
+        5
+      ],
+      "subdate": "2023-01-20T19:00:00.000Z",
+      "gender": "Female"
+    },
+    {
+      "id": "0.24036798341676424",
+      "fname": "ayesha",
+      "lname": "khan",
+      "states": "Georgia",
+      "course": [
+        4
+      ],
+      "subdate": "2023-01-17T19:00:00.000Z",
+      "gender": "Female"
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }

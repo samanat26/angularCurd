@@ -1,31 +1,17 @@
-<div class="container" >
-<div style=" border: 1px solid;">
-    <h1 mat-title style="text-align: center;">Login</h1>
-<div mat-content>
-   <form >
-    <mat-form-field appearance="fill">
-      <mat-label>Enter your email</mat-label>
-      <input matInput placeholder="pat@example.com" [formControl]="email" required>
-      <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
-    </mat-form-field>
-
-    <mat-form-field appearance="fill">
-      <mat-label>Enter your password</mat-label>
-      <input matInput [type]="hide ? 'password' : 'text'">
-      <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
-        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
-      </button>
-    </mat-form-field>
-   </form>
-
-</div>
-
-<div class="btn" mat-form-actions [align]="'end'">
-  <!-- <button mat-raised-button color="warn" mat-dialog-close> Close</button> -->
-  <button mat-raised-button color="primary" > Login</button> 
-</div>
-
-<a routerLink="../forget-password" routerLinkActive="active" ariaCurrentWhenActive="page">forgot password</a>
- 
-</div>
-</div>
+<mat-card class="card">
+  <mat-card-header>
+    <mat-card-title class="title">Login</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+      <div>
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit(loginModel)">
+          <formly-form [model]="loginModel" [fields]="loginFields"></formly-form>
+          <div class="center margin-top">
+            <button [disabled]="loginForm.invalid" mat-raised-button color="primary" type="submit" >Login</button> 
+          </div>  
+            <!-- <a routerLink="../forget-password" mat-raised-button color="secondary" class="center margin-top">Forget password</a> -->
+            <span class="center margin-top">New to plateform<a routerLink="../signup" class="link">Sign Up!</a></span>
+          </form>
+      </div>
+  </mat-card-content>
+</mat-card>

@@ -1,11 +1,13 @@
 <mat-toolbar color="primary">
-    <a routerLink="../admin/home" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <a routerLink="../admin/view" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
       <mat-icon>contacts</mat-icon>
     </a>
     
-    <span>Reactive Forms</span>
+    <span style="margin-left: 10px;">Reactive Forms</span>
     <span class="example-spacer"></span>
-    <!-- <button mat-raised-button color="warn" (click)="openDialog()" >Add</button> -->
-    <a routerLink="../admin/view" routerLinkActive="active" mat-raised-button color="primary" >View</a>
-  
+    <a *ngIf="api.isTableActive" mat-raised-button  routerLink="../admin/view">Add Table</a>
+    <!-- <a *ngIf="api.isGetActive" mat-raised-button  routerLink="../admin/view">get</a> -->
+
+    <button style="margin-left: 30px;" mat-raised-button color="warn" (click)="logout()" >Log out</button>
   </mat-toolbar> 
+ 

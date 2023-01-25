@@ -1,11 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-// import {MatDialog} from '@angular/material/dialog';
-import { DialogComponent } from './dialog/dialog.component';
-import {MatDialog, MAT_DIALOG_DATA} from '@angular/material/dialog';
-import { ApiService } from './services/api.service';
-
-
-
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -13,25 +6,12 @@ import { ApiService } from './services/api.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit  {
-  title = 'curd';
+  title = 'angularCurd';
 
-  displayedColumns: string[] = [ 'name', 'city', 'date','product','price','comment','action'];
-
-
-  constructor(private dialog: MatDialog, private api : ApiService) {
+  constructor() {
 
   }
   ngOnInit(): void {
    
-    throw new Error('Method not implemented.');
-  }
-  openDialog() {
-    this.dialog.open(DialogComponent, {
-      width:'30%'
-    }).afterClosed().subscribe(val=>{
-      if(val==='save'){
-
-      }
-    })
   }
 }

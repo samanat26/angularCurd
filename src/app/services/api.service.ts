@@ -5,21 +5,30 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class ApiService {
+  isTableActive : boolean = false 
+  // isGetActive : boolean =false
+  defaultValues: any ={
+    id: undefined,  
+    fname : '',
+    lname:'',
+    states:'',
+    course:'',
+    subdate:'',
+    gender:''
+  }
+  constructor(private http:HttpClient) { }
 
-  constructor(private http : HttpClient) { }
-
-  postProduct(data :any){
-    return this.http.post<any>("http://localhost:3000/productList/",data);
-  }
-  getProduct(){
-    return this.http.get<any>("http://localhost:3000/productList/");
+  postData(data:any){
+    return this.http.post<any>("http://localhost:3000/enrollment/",data);
   }
 
-  putProduct( data:any,id:number){
-    return this.http.put<any>("http://localhost:3000/productList/"+id,data);
+  getData(){
+    return this.http.get<any>("http://localhost:3000/enrollment/");
+}
+  putData(data:any , id: string | undefined ){
+    return this.http.put<any>("http://localhost:3000/enrollment/"+id,data);
   }
-   
-  deleteRecord(id:number){
-    return this.http.delete<any>("http://localhost:3000/productList/"+id);
-  }
+  deleteData(id:string){
+    return this.http.delete<any>("http://localhost:3000/enrollment/"+id);
+}
 }

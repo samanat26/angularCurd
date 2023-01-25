@@ -1,6 +1,18 @@
 <div class="container">
-    <h1>View Form</h1>
-    <a routerLink="../home" routerLinkActive="active" mat-raised-button color="primary" >Back to Home </a>
-  
-   
+    <h1 class="h1">Enrollment Form</h1>
+    <mat-card class="card">
+      <mat-card-content>
+          <form [formGroup]="addForm" (ngSubmit)="onSubmit(addModel)">
+            <formly-form [model]="addModel" [fields]="addFields" [form]="addForm"></formly-form>
+            <div class="center margin-top">              
+              <button [disabled]="addForm.invalid" mat-raised-button color="primary" type="submit" class="btn">{{isUpdating ? 'Update':'Add'}} </button>
+              <!-- <button mat-raised-button color="warn" type="submit" class="btn">Close </button> -->
+
+            </div>  
+            <a routerLink="../home" routerLinkActive="active" mat-button color="primary" >Back to Home </a>
+            <!-- <a routerLink="../forget-password" mat-raised-button color="secondary">Forget password</a> -->
+          </form>
+      </mat-card-content>
+    </mat-card>
   </div>
+

@@ -1,13 +1,40 @@
-.table {
-    width: 100%;
-  }
-  
-  .mat-mdc-form-field {
-    font-size: 14px;
-    width: 100%;
-  }
-
+.body{
+  padding: 10px; 
+}
   .container{
     max-width: 1200px;
     margin: 0 auto;
   }
+  .card{
+    max-width: 600px;
+    margin: 100px auto;
+   }
+ 
+ .title{
+     text-align: center;
+    }
+ 
+ .btn {
+   margin: 10px 10px;
+ 
+ }
+
+ .h1{
+  text-align: center;
+  margin-top: 50px;
+  // font-weight: 80px;
+ }
+
+ ::ng-deep formly-wrapper-mat-form-field{
+  margin-right: 10px !important;
+ }
+
+ .center{
+  width: 100%;
+  display:flex;
+  justify-content: center;
+}
+
+.margin-top {
+  margin-top: 16px;
+}

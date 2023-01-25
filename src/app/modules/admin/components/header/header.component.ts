@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ApiService } from 'src/app/services/api.service';
+import { AuthService } from 'src/app/services/auth.service';
 
 
 @Component({
@@ -8,5 +10,14 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+  constructor ( private auth:AuthService , public api : ApiService){}
  
+  ngOnInit(){
+  }
+
+  logout(): void{
+    this.auth.logout();
+
+ }
+
 }

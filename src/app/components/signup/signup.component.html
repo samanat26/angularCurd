@@ -1,0 +1,18 @@
+<mat-card class="card">
+    <mat-card-header>
+      <mat-card-title class="title">SignUp</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <div>
+          <form [formGroup]="signupForm" (ngSubmit)="onSubmit(signup)">
+            <formly-form [model]="signup" [fields]="signupFields" [form]="signupForm"></formly-form>
+            <div class="center margin-top">
+              <button type="submit" [disabled]="signupForm.invalid" mat-raised-button color="primary"  >SignUp</button> 
+            </div>  
+              <!-- <a routerLink="../forget-password" mat-raised-button color="secondary" class="center margin-top">Forget password</a> -->
+            </form>
+            <span class="center margin-top">Already SignUp<a routerLink="../login" class="link">Login!</a></span>
+        </div>
+    </mat-card-content>
+  </mat-card>
+  
